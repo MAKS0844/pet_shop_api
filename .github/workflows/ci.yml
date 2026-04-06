@@ -22,5 +22,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Check syntax
-      run: node --check server.js
+    - name: Build Docker image
+      run: docker build -t pet-shop-api .
